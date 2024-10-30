@@ -17,9 +17,9 @@
            align-items: center;
            justify-content: center;
            height: 100vh;
-           font-family: Arial, sans-serif;
+           font-family: 'Arial', sans-serif;
            color: #ffffff;
-           background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+           background: linear-gradient(135deg, #ff6b6b, #f0e130, #6dd5fa);
            background-size: 400% 400%;
            animation: gradientAnimation 10s ease infinite;
            overflow: hidden;
@@ -30,21 +30,31 @@
            100% { background-position: 0% 50%; }
        }
        h1 {
-           font-size: 3em;
+           font-size: 4em;
            text-align: center;
            text-transform: uppercase;
-           letter-spacing: 2px;
+           letter-spacing: 3px;
            font-weight: bold;
            padding: 20px;
-           background: rgba(0, 0, 0, 0.6);
+           background: rgba(0, 0, 0, 0.7);
            border-radius: 10px;
-           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+           animation: bounce 1s infinite alternate;
        }
        p {
-           font-size: 1.2em;
+           font-size: 1.5em;
            margin-top: 10px;
            text-align: center;
-           color: #e0e0e0;
+           color: #ffffff;
+           animation: fadeIn 2s ease-in-out;
+       }
+       @keyframes bounce {
+           0% { transform: translateY(0); }
+           100% { transform: translateY(-10px); }
+       }
+       @keyframes fadeIn {
+           0% { opacity: 0; }
+           100% { opacity: 1; }
        }
    </style>
 </head>
@@ -52,7 +62,7 @@
 
    <div>
        <h1>BrotherBuds erscheint bald</h1>
-       <p>Stay tuned for something exciting!</p>
+       <p>Bleib gespannt auf etwas Aufregendes!</p>
    </div>
 
 </body>
