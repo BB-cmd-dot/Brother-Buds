@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eine Webseite zur sachlichen Aufklärung über die Gefahren und Wirkungen von Drogen">
+    <title>Drogenaufklärung - FidgetHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .drug-info {
+            margin-bottom: 20px;
+        }
+        .drug-info h3 {
+            margin: 10px 0;
+            color: #444;
+        }
+        .drug-info p {
+            margin: 5px 0;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FidgetHub - Drogenaufklärung</h1>
+    <p>Informiere dich über Substanzen und deren Risiken. Diese Seite dient nur zur Aufklärung und Prävention.</p>
+</header>
+
+<main>
+    <!-- Beispiel für "normales Weed" -->
+    <section class="drug-info">
+        <h2>Normales Weed</h2>
+        <p><strong>Beschreibung:</strong> Cannabis in seiner herkömmlichen Form, oft mit mittlerem THC-Gehalt.</p>
+        <p><strong>THC-Gehalt:</strong> Durchschnittlich 10-20%</p>
+        <p><strong>Wirkung:</strong> Beruhigend, leicht euphorisch, manchmal auch angstlösend. Kann jedoch auch negative Effekte wie Paranoia und Angstzustände auslösen.</p>
+        <p><strong>Preis auf der Straße:</strong> ca. 8-12 EUR pro Gramm</p>
+        <p class="warning">Warnung: Der Konsum kann zu psychischen und physischen Abhängigkeiten führen und birgt gesundheitliche Risiken.</p>
+    </section>
+
+    <!-- Beispiel für "Kellyweed" -->
+    <section class="drug-info">
+        <h2>Kellyweed</h2>
+        <p><strong>Beschreibung:</strong> Eine stärkere Form von Cannabis mit höherem THC-Gehalt.</p>
+        <p><strong>THC-Gehalt:</strong> Durchschnittlich 20-30%</p>
+        <p><strong>Wirkung:</strong> Intensiver Rauschzustand, verstärkte Euphorie, oft stärkere Nebenwirkungen wie trockener Mund, Schwindel oder erhöhte Herzfrequenz.</p>
+        <p><strong>Preis auf der Straße:</strong> ca. 12-15 EUR pro Gramm</p>
+        <p class="warning">Warnung: Höhere Risiken aufgrund des hohen THC-Gehalts, erhöhtes Risiko für Abhängigkeit und psychische Probleme.</p>
+    </section>
+
+    <!-- Beispiel für "Hush" -->
+    <section class="drug-info">
+        <h2>Hush</h2>
+        <p><strong>Beschreibung:</strong> Ein konzentrierter Extrakt aus Cannabis, oft in Form von Öl oder Harz.</p>
+        <p><strong>THC-Gehalt:</strong> Durchschnittlich 40-60%</p>
+        <p><strong>Wirkung:</strong> Sehr intensiver Rauschzustand, kann zu starker Entspannung oder auch starken Halluzinationen führen.</p>
+        <p><strong>Preis auf der Straße:</strong> ca. 20-30 EUR pro Gramm</p>
+        <p class="warning">Warnung: Sehr hohes Abhängigkeitspotential, gefährlich für unerfahrene Konsumenten. Kann schwere psychische und physische Schäden verursachen.</p>
+    </section>
+
+    <footer>
+        <p>Diese Seite dient ausschließlich zu Bildungs- und Präventionszwecken. Der Konsum von Drogen birgt erhebliche gesundheitliche Risiken.</p>
+    </footer>
+</main>
+
+</body>
+</html>
