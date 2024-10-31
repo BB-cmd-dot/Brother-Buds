@@ -15,6 +15,9 @@
             color: #333;
             overflow-x: hidden;
             position: relative;
+            background-image: url('https://postimg.cc/KkNRnYnr');
+            background-size: cover;
+            background-attachment: fixed;
         }
         header {
             background: #ffcc80; 
@@ -35,20 +38,16 @@
             margin-bottom: 20px;
             transition: transform 0.3s;
         }
-        .logo:hover {
-            transform: scale(1.1);
-        }
         h1 {
-            font-size: 2.5em;
+            font-size: 2em; /* Schriftgröße verkleinert */
             margin: 0;
             font-weight: bold;
             font-family: 'Alfa Slab One', cursive;
         }
         .announcement {
-            font-size: 1.5em;
-            font-weight: bold;
+            color: black; /* Farbe für die Ankündigung */
+            font-size: 1.2em;
             margin-top: 10px;
-            color: #ff9800;
         }
         section {
             background: rgba(255, 240, 200, 0.85);
@@ -56,13 +55,6 @@
             margin: 15px 0;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s, background 0.3s;
-        }
-        section:hover {
-            transform: scale(1.02);
-            background: rgba(255, 240, 200, 0.95);
         }
         h2 {
             color: #ff9800;
@@ -96,145 +88,102 @@
             border-radius: 5px;
         }
         .vip-section {
-            text-align: center;
-            margin-top: 30px;
-            background: #ffffff; /* Weißer Hintergrund */
-            padding: 30px;
+            background: #ffdd57; 
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
             position: relative;
-            overflow: hidden;
-            border: 2px solid #ff9800; /* Dunklerer Rand für mehr Kontrast */
         }
         .vip-button {
-            background: #ffca28; /* Helleres Gold */
-            color: #333;
-            padding: 15px 30px;
-            font-size: 1.5em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            background: #ff9800; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 1.5em; 
+            margin-top: 10px;
             transition: background 0.3s;
-            position: relative;
-            display: inline-block;
-            z-index: 1;
-            margin-top: 20px;
         }
         .vip-button:hover {
-            background: #ffd54f; /* Helleres Gold bei Hover */
-        }
-        .click-me {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #6d4c41;
-            margin-bottom: 10px;
-            z-index: 1;
-            position: relative;
+            background: #ff5722; 
         }
         footer {
             text-align: center;
             margin-top: 20px;
             color: #777;
         }
-        .royal-icon {
-            width: 60px; 
-            margin: 10px 0;
-        }
-        .floating-button {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            background-image: url('https://img.icons8.com/ios-filled/100/4caf50/marijuana.png');
-            background-size: cover;
-            width: 70px;
-            height: 70px;
-            border: none;
-            cursor: pointer;
-            animation: float 3s ease-in-out infinite;
-            z-index: 10;
-        }
-        @keyframes float {
-            0% { transform: translatey(0); }
-            50% { transform: translatey(-10px); }
-            100% { transform: translatey(0); }
-        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://i.postimg.cc/VdHjcGn0/Brother-Buds-Logo.png" alt="Brother Buds Logo" class="logo"> 
-        <h1>Willkommen bei Brother Buds, Shababs!</h1>
-        <div class="announcement">Fuck the system!</div>
+        <img src="https://postimg.cc/23Jxc43K" alt="Brother Buds Logo" class="logo"> 
+        <h1>Willkommen bei Brother Buds</h1>
+        <div class="announcement">🖤 Fuck the system! 🖤</div>
     </header>
 
     <main>
         <section id="cali-weed">
-            <h2>🌿 Cali Weed</h2>
-            <p>Das beste Cali Weed im Game! Neue Strains kommen bald!</p>
-            <h3>Verfügbare Strains:</h3>
-            <ul>
-                <li class="strain">Gelato</li>
-                <li class="strain">OG Kush</li>
-                <li class="strain">GSC (Girl Scout Cookies)</li>
-            </ul>
-            <h3>Preise:</h3>
+            <h2>🌿 Das beste Cali Weed im Game!</h2>
+            <p>Neue Strains kommen bald! 🌞✨</p>
             <ul>
                 <li>2g <span>30 €</span></li>
                 <li>5g <span>70 €</span></li>
                 <li>10g <span>120 €</span></li>
             </ul>
+            <h3>Verfügbare Strains:</h3>
+            <ul>
+                <li>Gelato</li>
+                <li>Blue Dream</li>
+                <li>Girl Scout Cookies</li>
+            </ul>
         </section>
 
         <section id="standard-weed">
-            <h2>🍃 Standard Weed</h2>
-            <p>Klassisches Weed für chillige Vibes.</p>
-            <h3>Verfügbare Strains:</h3>
-            <ul>
-                <li class="strain">Amnesia</li>
-                <li class="strain">Moby Dick</li>
-            </ul>
-            <h3>Preise:</h3>
+            <h2>🌿 Klassisches Weed für chillige Vibes</h2>
+            <p>Shababs, besseres gibt's nicht! 🍃✨</p>
             <ul>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
                 <li>10g <span>85 €</span></li>
+            </ul>
+            <h3>Verfügbare Sorten:</h3>
+            <ul>
+                <li>Amnesia</li>
+                <li>Moby Dick</li>
             </ul>
         </section>
 
         <section id="hash">
-            <h2>Hash 🍫🔥</h2>
-            <p>Shababs, besseres gibt's nicht!</p>
-            <h3>Verfügbare Strains:</h3>
-            <ul>
-                <li class="strain">La Mousse</li>
-                <li class="strain">Fresh Frozen</li>
-            </ul>
-            <h3>Preise:</h3>
+            <h2>🍫 Hash</h2>
+            <p>Shababs, besseres gibt's nicht! 🌟🔥</p>
             <ul>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
                 <li>10g <span>85 €</span></li>
             </ul>
+            <h3>Verfügbare Sorten:</h3>
+            <ul>
+                <li>La Mousse</li>
+                <li>Fresh Frozen</li>
+            </ul>
         </section>
-        
+
         <div class="vip-section">
-            <div class="click-me">Click me!</div>
-            <img src="https://img.icons8.com/ios-filled/60/ffd600/crown.png" alt="Krone" class="royal-icon"/>
-            <h2>GOLD-VIP</h2>
-            <button class="vip-button" onclick="openVIPPage()">Werdet jetzt VIP!</button>
-            <p>Holt euch viele Vorteile und Rabatte auf unsere Produkte, Shababs!</p>
+            <h2>👑 Gold VIP!</h2>
+            <p>Exklusive Vorteile und Rabatte für unsere VIPs! 💎✨</p>
+            <button class="vip-button" onclick="showPasswordPrompt()">💰 Click me!</button>
         </div>
     </main>
-
-    <button class="floating-button" onclick="openVIPPage()"></button>
 
     <footer>
         <p>&copy; 2024 Brother Buds Produktauflistung</p>
     </footer>
 
     <script>
-        function openVIPPage() {
-            const password = prompt("Bitte Passwort eingeben:");
+        function showPasswordPrompt() {
+            var password = prompt("Bitte Passwort eingeben:");
             if (password === "Huan145") {
                 window.location.href = "vip.html"; // Weiterleitung zur VIP-Seite
             } else {
