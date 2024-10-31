@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Produktauflistung für Cannabis-Produkte">
     <title>Brother Buds</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
+        /* Dark Mode Design mit Akzenten und Hover-Effekten */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 20px;
             background: #1e1e1e;
-            color: #e0e0e0;
+            color: #f0f0f0;
             overflow-x: hidden;
             line-height: 1.6;
             font-size: 1.1em;
         }
         header {
-            background: #333333;
-            color: #e0e0e0;
+            background: #292929;
+            color: #ffcc66;
             padding: 30px;
             text-align: center;
             border-radius: 10px;
@@ -34,32 +35,34 @@
             font-size: 2.5em;
             margin: 0;
             font-family: 'Bangers', cursive;
-            color: #d35d6e;
+            color: #ff8a66;
             letter-spacing: 1px;
         }
         .announcement {
-            color: #e0e0e0;
-            font-size: 1.2em;
+            color: #ffcc66;
+            font-size: 1.3em;
             margin-top: 10px;
         }
         section {
-            background: #2a2a2a;
+            background: #333333;
             padding: 20px;
             margin: 15px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
         }
         h2 {
-            color: #ff8a66;
-            font-size: 1.5em; /* Reduzierte Größe für dunkles Design */
-            font-family: 'Poppins', sans-serif;
+            color: #ffcc66;
+            font-size: 1.8em;
+            font-family: 'Permanent Marker', cursive;
             margin-bottom: 10px;
-            letter-spacing: 0.5px;
         }
         h3 {
-            color: #ffb088;
-            font-size: 1.2em;
-            font-family: 'Poppins', sans-serif;
+            color: #ffb3a7;
+            font-size: 1.3em;
             font-weight: 700;
             margin: 10px 0;
         }
@@ -75,44 +78,63 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 1em;
-            color: #e0e0e0;
+            font-size: 1.1em;
+            color: #ffcc66;
         }
         .vip-section {
+            background: #555555;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
             text-align: center;
             position: relative;
-            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
         }
-        .gold-vip {
-            background: #ffd700;
-            color: #4b2c2c;
-        }
-        .silver-vip {
-            background: #c0c0c0;
-            color: #4b2c2c;
+        .vip-section:hover {
+            box-shadow: 0 6px 20px rgba(255, 204, 102, 0.7);
         }
         .vip-button {
-            background: #d35d6e;
-            color: white;
+            background: #ff8a66;
+            color: #1e1e1e;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1.3em;
+            font-size: 1.5em;
             margin-top: 10px;
             font-family: 'Bangers', cursive;
+            transition: background 0.3s ease;
         }
         .vip-button:hover {
-            background: #ff8a66;
+            background: #ffcc66;
         }
         footer {
             text-align: center;
             margin-top: 20px;
-            color: #e0e0e0;
+            color: #999999;
             font-size: 1em;
+        }
+        .gold-silver-vip {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .gold-vip, .silver-vip {
+            width: 45%;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            color: #f0f0f0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .gold-vip {
+            background-color: #806622;
+            border: 2px solid #ffcc66;
+        }
+        .silver-vip {
+            background-color: #636363;
+            border: 2px solid #cccccc;
         }
     </style>
 </head>
@@ -170,16 +192,17 @@
             </ul>
         </section>
 
-        <div class="vip-section gold-vip">
-            <h2>👑 Gold VIP</h2>
-            <p>Exklusive Vorteile und Rabatte für unsere VIPs! 💎✨</p>
-            <button class="vip-button" onclick="showPasswordPrompt('gold')">Click me!</button>
-        </div>
-
-        <div class="vip-section silver-vip">
-            <h2>🥈 Silber VIP</h2>
-            <p>Zugang zu exklusiven Angeboten und Rabatten für unsere Silber VIPs! 🌟</p>
-            <button class="vip-button" onclick="showPasswordPrompt('silver')">Click me!</button>
+        <div class="gold-silver-vip">
+            <div class="gold-vip vip-section">
+                <h2>👑 Gold VIP</h2>
+                <p>Exklusive Vorteile und Rabatte für unsere VIPs! 💎✨</p>
+                <button class="vip-button" onclick="showPasswordPrompt()">Click me!</button>
+            </div>
+            <div class="silver-vip vip-section">
+                <h2>🥈 Silber VIP</h2>
+                <p>Silber-Vorteile und exklusive Deals für Einsteiger!</p>
+                <button class="vip-button" onclick="showPasswordPrompt()">Click me!</button>
+            </div>
         </div>
     </main>
 
@@ -188,10 +211,10 @@
     </footer>
 
     <script>
-        function showPasswordPrompt(level) {
+        function showPasswordPrompt() {
             var password = prompt("Bitte Passwort eingeben:");
-            if ((level === 'gold' && password === "Huan145") || (level === 'silver' && password === "Silber123")) {
-                window.location.href = level + "-vip.html"; // Weiterleitung zur VIP-Seite
+            if (password === "Huan145") {
+                window.location.href = "vip.html";
             } else {
                 alert("Falsches Passwort! Zugang verweigert.");
             }
