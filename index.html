@@ -35,7 +35,7 @@
             font-size: 2.5em;
             margin: 0;
             font-family: 'Bangers', cursive;
-            color: #ff8a66;
+            color: #ff8a66; /* Angepasste Farbe */
             letter-spacing: 1px;
         }
         .announcement {
@@ -49,10 +49,24 @@
             margin: 15px 0;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-            transition: transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         section:hover {
             transform: scale(1.02);
+        }
+        section::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 204, 102, 0.5);
+            box-shadow: 0 0 20px rgba(255, 204, 102, 0.8);
+            z-index: -1;
         }
         h2 {
             color: #ffcc66;
@@ -140,7 +154,7 @@
 </head>
 <body>
     <header>
-        <img src="/mnt/data/image0.png" alt="Brother Buds Logo" class="logo">
+        <img src="https://i.postimg.cc/NFrbTBFR/Unbenannt-removebg-preview.png" alt="Brother Buds Logo" class="logo">
         <h1>Willkommen bei Brother Buds</h1>
         <div class="announcement">We don't push the same!</div>
     </header>
