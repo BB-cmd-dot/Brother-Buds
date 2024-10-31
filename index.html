@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Produktauflistung für Cannabis-Produkte">
     <title>Brother Buds</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&family=Permanent+Marker&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Dark Mode Design mit Akzenten und Hover-Effekten */
         body {
@@ -72,8 +72,8 @@
         }
         h2 {
             color: #ffcc66;
-            font-size: 1.8em;
-            font-family: 'Permanent Marker', cursive;
+            font-size: 1.4em; /* Kleinere Schriftgröße für die Sektionen */
+            font-family: 'Raleway', sans-serif; /* Neue Schriftart */
             margin-bottom: 10px;
         }
         h3 {
@@ -158,6 +158,11 @@
             margin-bottom: 10px;
             line-height: 1.2; /* Erhöhte Zeilenhöhe für bessere Symmetrie */
         }
+        /* Leuchtender Effekt für aktive Sektionen */
+        .active-section {
+            box-shadow: 0 0 15px rgba(255, 204, 102, 1), 0 0 30px rgba(255, 204, 102, 0.5);
+            transition: box-shadow 0.5s ease;
+        }
     </style>
 </head>
 <body>
@@ -168,7 +173,7 @@
     </header>
 
     <main>
-        <section id="cali-weed">
+        <section id="cali-weed" onclick="activateSection(this)">
             <h2>🌿 Das beste Cali Weed im Game!</h2>
             <p>Neue Strains kommen bald! 🌞✨</p>
             <ul>
@@ -184,7 +189,7 @@
             </ul>
         </section>
 
-        <section id="standard-weed">
+        <section id="standard-weed" onclick="activateSection(this)">
             <h2>🌿 Standard Weed</h2>
             <p>Shababs, besseres gibt's nicht! 🍃✨</p>
             <ul>
@@ -199,7 +204,7 @@
             </ul>
         </section>
 
-        <section id="hash">
+        <section id="hash" onclick="activateSection(this)">
             <h2>🍫 Hash</h2>
             <p>Shababs, besseres gibt's nicht! 🌟🔥</p>
             <ul>
@@ -240,6 +245,20 @@
             } else {
                 alert("Falsches Passwort! Zugang verweigert.");
             }
+        }
+
+        function activateSection(section) {
+            // Entferne den aktiven Effekt von allen Sektionen
+            const sections = document.querySelectorAll("section");
+            sections.forEach((sec) => {
+                sec.classList.remove("active-section");
+            });
+            // Füge den aktiven Effekt zur geklickten Sektion hinzu
+            section.classList.add("active-section");
+            // Entferne den Effekt nach einer kurzen Zeit
+            setTimeout(() => {
+                section.classList.remove("active-section");
+            }, 1000);
         }
     </script>
 </body>
