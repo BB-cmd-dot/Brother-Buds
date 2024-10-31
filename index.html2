@@ -11,7 +11,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(135deg, #ffcc80, #ffab40);
+            background: linear-gradient(135deg, #ffe0b2, #ffcc80);
             color: #333;
             overflow-x: hidden;
         }
@@ -39,7 +39,7 @@
             color: #ff9800;
         }
         section {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.85);
             padding: 20px;
             margin: 15px 0;
             border-radius: 10px;
@@ -50,7 +50,7 @@
         }
         section:hover {
             transform: scale(1.02);
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
         }
         h2 {
             color: #ff9800;
@@ -69,6 +69,12 @@
             justify-content: space-between;
             align-items: center;
         }
+        .strain {
+            background: #ffcc80;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+        }
         footer {
             text-align: center;
             margin-top: 20px;
@@ -86,11 +92,15 @@
     <main>
         <section id="cali-weed">
             <h2>Cali Weed</h2>
-            <p>🌿 Hochwertiges Cali Weed aus Kalifornien! Neue Sorten kommen bald!</p>
+            <p>🌿✨ Hochwertiges Cali Weed aus Kalifornien! Neue Sorten kommen bald!</p>
+            <h3>Beliebte Sorten:</h3>
             <ul>
-                <li>Gelato <span>70 €</span></li>
-                <li>OG Kush <span>70 €</span></li>
-                <li>GSC (Girl Scout Cookies) <span>70 €</span></li>
+                <li class="strain">Gelato</li>
+                <li class="strain">OG Kush</li>
+                <li class="strain">GSC (Girl Scout Cookies)</li>
+            </ul>
+            <h3>Preise:</h3>
+            <ul>
                 <li>2g <span>30 €</span></li>
                 <li>5g <span>70 €</span></li>
                 <li>10g <span>120 €</span></li>
@@ -99,10 +109,14 @@
 
         <section id="standard-weed">
             <h2>Standard Weed</h2>
-            <p>🍃 Klassisches Weed für entspannte Abende!</p>
+            <p>🍃🎉 Klassisches Weed für entspannte Abende!</p>
+            <h3>Beliebte Sorten:</h3>
             <ul>
-                <li>Amnesia <span>10 €</span></li>
-                <li>Moby Dick <span>10 €</span></li>
+                <li class="strain">Amnesia</li>
+                <li class="strain">Moby Dick</li>
+            </ul>
+            <h3>Preise:</h3>
+            <ul>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
                 <li>10g <span>85 €</span></li>
@@ -110,11 +124,15 @@
         </section>
 
         <section id="hash">
-            <h2>Hash 🍫</h2>
-            <p>Hochwertiger Hash mit intensiven Aromen!</p>
+            <h2>Hash 🍫🔥</h2>
+            <p>💎✨ Hochwertiger Hash mit intensiven Aromen!</p>
+            <h3>Beliebte Sorten:</h3>
             <ul>
-                <li>La Mousse <span>10 €</span></li>
-                <li>Fresh Frozen <span>10 €</span></li>
+                <li class="strain">La Mousse</li>
+                <li class="strain">Fresh Frozen</li>
+            </ul>
+            <h3>Preise:</h3>
+            <ul>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
                 <li>10g <span>85 €</span></li>
