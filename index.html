@@ -40,10 +40,14 @@
         }
         .announcement {
             color: #ffcc66;
-            font-size: 1.4em; /* Größere Schrift */
+            font-size: 1.2em; /* Kleinere Schrift */
             margin-top: 10px;
             font-weight: bold; /* Fett gedruckt */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Schatteneffekt */
+            text-shadow: 0 0 5px rgba(255, 204, 102, 0.5), 0 0 10px rgba(255, 204, 102, 0.3); /* Leichter Leuchteffekt */
+            transition: text-shadow 0.3s ease; /* Sanfter Übergang für den Leuchteffekt */
+        }
+        .announcement:hover {
+            text-shadow: 0 0 10px rgba(255, 204, 102, 1), 0 0 20px rgba(255, 204, 102, 0.5); /* Verstärkter Leuchteffekt */
         }
         section {
             background: #333333;
@@ -234,7 +238,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Brother Buds Produktauflistung</p>
+        <p>&copy; Nothing for Sale, purely educational. Purposes? - Get in contact with us for more information!</p>
     </footer>
 
     <script>
