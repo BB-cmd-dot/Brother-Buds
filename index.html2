@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Produktauflistung für Cannabis-Produkte">
     <title>Produktauflistung für Brother Buds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 20px;
             background: linear-gradient(135deg, #ffcc80, #ffab40);
             color: #333;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         header {
             background: rgba(255, 255, 255, 0.9);
@@ -51,23 +52,9 @@
             transform: scale(1.02);
             background: rgba(255, 255, 255, 0.9);
         }
-        section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255, 200, 100, 0.2) 10%, rgba(255, 255, 255, 0.2) 30%);
-            border-radius: 50%;
-            z-index: 0;
-        }
-        section > * {
-            position: relative;
-            z-index: 1;
-        }
         h2 {
             color: #ff9800;
+            font-size: 1.8em;
         }
         ul {
             list-style-type: none;
@@ -91,16 +78,19 @@
 </head>
 <body>
     <header>
-        <img src="https://postimg.cc/VdHjcGn0" alt="Brother Buds Logo" class="logo"> 
+        <img src="https://i.postimg.cc/VdHjcGn0/Brother-Buds-Logo.png" alt="Brother Buds Logo" class="logo"> 
         <h1>Willkommen bei Brother Buds</h1>
         <div class="announcement">Fuck the system!</div>
     </header>
 
     <main>
         <section id="cali-weed">
-            <h2>Cali Weed 🌞</h2>
-            <p>🌿 Erlebe die Sonne Kaliforniens mit unserem erstklassigen Cali Weed! Bald neue Sorten, die dein Herz höher schlagen lassen! ✨</p>
+            <h2>Cali Weed</h2>
+            <p>🌿 Hochwertiges Cali Weed aus Kalifornien! Neue Sorten kommen bald!</p>
             <ul>
+                <li>Gelato <span>70 €</span></li>
+                <li>OG Kush <span>70 €</span></li>
+                <li>GSC (Girl Scout Cookies) <span>70 €</span></li>
                 <li>2g <span>30 €</span></li>
                 <li>5g <span>70 €</span></li>
                 <li>10g <span>120 €</span></li>
@@ -108,9 +98,11 @@
         </section>
 
         <section id="standard-weed">
-            <h2>Standard Weed 🌱</h2>
-            <p>🍃 Entdecke die klassischen Aromen und intensiven Wirkungen unseres Standard Weeds. Perfekt für entspannte Abende oder gesellige Runden! 🎉</p>
+            <h2>Standard Weed</h2>
+            <p>🍃 Klassisches Weed für entspannte Abende!</p>
             <ul>
+                <li>Amnesia <span>10 €</span></li>
+                <li>Moby Dick <span>10 €</span></li>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
                 <li>10g <span>85 €</span></li>
@@ -118,9 +110,11 @@
         </section>
 
         <section id="hash">
-            <h2>Hash 🍫🔥</h2>
-            <p>💎 Unser hochwertiger Hash bietet dir das Beste aus beiden Welten. Erlebe die dichte Textur und den intensiven Geschmack! 🌌</p>
+            <h2>Hash 🍫</h2>
+            <p>Hochwertiger Hash mit intensiven Aromen!</p>
             <ul>
+                <li>La Mousse <span>10 €</span></li>
+                <li>Fresh Frozen <span>10 €</span></li>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
                 <li>10g <span>85 €</span></li>
