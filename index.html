@@ -11,10 +11,10 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(135deg, #ffe0b2, #ffcc80);
+            background: #ffe0b2; /* Blasser orangefarbener Hintergrund */
             color: #333;
             overflow-x: hidden;
-            background-image: url('https://www.transparenttextures.com/patterns/pw.png'); /* Muster hinzugefügt */
+            background-image: url('https://www.transparenttextures.com/patterns/pw.png');
         }
         header {
             background: rgba(255, 255, 255, 0.9);
@@ -35,7 +35,7 @@
             transition: transform 0.3s;
         }
         .logo:hover {
-            transform: scale(1.1); /* Logo-Effekt */
+            transform: scale(1.1);
         }
         .announcement {
             font-size: 1.5em;
@@ -66,9 +66,9 @@
         h2::after {
             content: '';
             display: block;
-            width: 50%;
+            width: 100%; /* Längere Linie */
             height: 3px;
-            background: #ff5722;
+            background: #ff5722; /* Orange Farbe */
             margin: 5px auto 0;
             border-radius: 5px;
         }
@@ -90,6 +90,40 @@
             margin: 5px 0;
             padding: 8px;
             border-radius: 5px;
+        }
+        .vip-section {
+            text-align: center;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .vip-button {
+            background: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            position: relative;
+            display: inline-block;
+        }
+        .vip-button:hover {
+            background: #ff5722;
+        }
+        .click-me {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff5722;
+            animation: bounce 1s infinite;
+            margin-bottom: 10px;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
         footer {
             text-align: center;
@@ -150,10 +184,16 @@
             <h3>Preise:</h3>
             <ul>
                 <li>1g <span>10 €</span></li>
-                <li>5g <span>50 €</span></li>
-                <li>12g <span>100 €</span></li>
+                <li>5g <span>45 €</span></li>
+                <li>10g <span>85 €</span></li>
             </ul>
         </section>
+        
+        <div class="vip-section">
+            <div class="click-me">Click me!</div>
+            <button class="vip-button">GOLD-VIP</button>
+            <p>Genieße viele Vorteile und Rabatte! Werde ein GOLD-VIP-Mitglied und profitiere von exklusiven Angeboten!</p>
+        </div>
     </main>
 
     <footer>
