@@ -29,7 +29,7 @@
             to { opacity: 1; }
         }
         .logo {
-            max-width: 150px;
+            max-width: 200px; /* Größe des Logos erhöht */
             margin-bottom: 20px;
         }
         .announcement {
@@ -91,9 +91,9 @@
 
     <main>
         <section id="cali-weed">
-            <h2>Cali Weed</h2>
-            <p>🌿✨ Hochwertiges Cali Weed aus Kalifornien! Neue Sorten kommen bald!</p>
-            <h3>Beliebte Sorten:</h3>
+            <h2>Cali Weed🌿</h2>
+            <p> Hochwertiges Cali Weed aus Kalifornien! Neue Strains kommen bald!</p>
+            <h3>Verfügbare Strains:</h3>
             <ul>
                 <li class="strain">Gelato</li>
                 <li class="strain">OG Kush</li>
@@ -108,9 +108,9 @@
         </section>
 
         <section id="standard-weed">
-            <h2>Standard Weed</h2>
-            <p>🍃🎉 Klassisches Weed für entspannte Abende!</p>
-            <h3>Beliebte Sorten:</h3>
+            <h2>Standard Weed🍃</h2>
+            <p> Klassisches Weed für entspannte Abende!</p>
+            <h3>Verfügbare Strains:</h3>
             <ul>
                 <li class="strain">Amnesia</li>
                 <li class="strain">Moby Dick</li>
@@ -125,8 +125,8 @@
 
         <section id="hash">
             <h2>Hash 🍫🔥</h2>
-            <p>💎✨ Hochwertiger Hash mit intensiven Aromen!</p>
-            <h3>Beliebte Sorten:</h3>
+            <p> Hochwertiger Hash mit intensiven Aromen!</p>
+            <h3>Verfügbare Strains:</h3>
             <ul>
                 <li class="strain">La Mousse</li>
                 <li class="strain">Fresh Frozen</li>
