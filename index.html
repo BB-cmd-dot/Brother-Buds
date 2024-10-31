@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Produktauflistung für Cannabis-Produkte">
-    <title>Produktauflistung für Cannabis</title>
+    <title>Produktauflistung für Brother Buds</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #eaeaea;
+            background-color: #f0f8f0;
             color: #333;
         }
         header {
-            background: #4a90e2;
+            background: #4caf50;
             color: #fff;
             padding: 20px;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .announcement {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff5722;
         }
         section {
             background: #fff;
@@ -33,14 +44,14 @@
             transform: scale(1.02);
         }
         h2 {
-            color: #4a90e2;
+            color: #388e3c;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            background: #f4f4f4;
+            background: #e8f5e9;
             margin: 5px 0;
             padding: 10px;
             border-radius: 5px;
@@ -57,13 +68,14 @@
 </head>
 <body>
     <header>
-        <h1>Willkommen zu unserer Produktauflistung</h1>
+        <h1>Willkommen bei Brother Buds</h1>
+        <div class="announcement">Fuck the system!</div>
     </header>
 
     <main>
         <section id="cali-weed">
             <h2>Cali Weed</h2>
-            <p>Bald neue Sorten verfügbar!</p>
+            <p>Erlebe die Sonne Kaliforniens mit unserem erstklassigen Cali Weed! Bald neue Sorten verfügbar, die dein Herz höher schlagen lassen!</p>
             <ul>
                 <li>2g <span>30 €</span></li>
                 <li>5g <span>70 €</span></li>
@@ -73,6 +85,7 @@
 
         <section id="normales-weed">
             <h2>Normales Weed</h2>
+            <p>Fuck the system! Entdecke die klassischen Aromen und intensiven Wirkungen unseres normalen Weeds. Perfekt für entspannte Abende oder gesellige Runden!</p>
             <ul>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
@@ -82,6 +95,7 @@
 
         <section id="hash">
             <h2>Hash</h2>
+            <p>Fuck the system! Unser hochwertiger Hash bietet dir das Beste aus beiden Welten. Erlebe die dichte Textur und den intensiven Geschmack!</p>
             <ul>
                 <li>1g <span>10 €</span></li>
                 <li>5g <span>45 €</span></li>
@@ -91,7 +105,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Produktauflistung</p>
+        <p>&copy; 2024 Brother Buds Produktauflistung</p>
     </footer>
 </body>
 </html>
