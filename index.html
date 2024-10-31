@@ -14,6 +14,7 @@
             background: linear-gradient(135deg, #ffe0b2, #ffcc80);
             color: #333;
             overflow-x: hidden;
+            background-image: url('https://www.transparenttextures.com/patterns/pw.png'); /* Muster hinzugefügt */
         }
         header {
             background: rgba(255, 255, 255, 0.9);
@@ -21,7 +22,7 @@
             padding: 20px;
             text-align: center;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             animation: fadeIn 1s;
         }
         @keyframes fadeIn {
@@ -29,8 +30,12 @@
             to { opacity: 1; }
         }
         .logo {
-            max-width: 200px; /* Größe des Logos erhöht */
+            max-width: 200px;
             margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .logo:hover {
+            transform: scale(1.1); /* Logo-Effekt */
         }
         .announcement {
             font-size: 1.5em;
@@ -43,7 +48,7 @@
             padding: 20px;
             margin: 15px 0;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             position: relative;
             overflow: hidden;
             transition: transform 0.3s, background 0.3s;
@@ -55,6 +60,17 @@
         h2 {
             color: #ff9800;
             font-size: 1.8em;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 3px;
+            background: #ff5722;
+            margin: 5px auto 0;
+            border-radius: 5px;
         }
         ul {
             list-style-type: none;
@@ -91,8 +107,8 @@
 
     <main>
         <section id="cali-weed">
-            <h2>Cali Weed🌿</h2>
-            <p> Hochwertiges Cali Weed aus Kalifornien! Neue Strains kommen bald!</p>
+            <h2>🌿 Cali Weed</h2>
+            <p>Hochwertiges Cali Weed aus Kalifornien! Neue Strains kommen bald!</p>
             <h3>Verfügbare Strains:</h3>
             <ul>
                 <li class="strain">Gelato</li>
@@ -108,8 +124,8 @@
         </section>
 
         <section id="standard-weed">
-            <h2>Standard Weed🍃</h2>
-            <p> Klassisches Weed für entspannte Abende!</p>
+            <h2>🍃 Standard Weed</h2>
+            <p>Klassisches Weed für entspannte Abende!</p>
             <h3>Verfügbare Strains:</h3>
             <ul>
                 <li class="strain">Amnesia</li>
@@ -124,8 +140,8 @@
         </section>
 
         <section id="hash">
-            <h2>Hash 🍫🔥</h2>
-            <p> Hochwertiger Hash mit intensiven Aromen!</p>
+            <h2>Hash 🍫</h2>
+            <p>Hochwertiger Hash mit intensiven Aromen!</p>
             <h3>Verfügbare Strains:</h3>
             <ul>
                 <li class="strain">La Mousse</li>
@@ -134,8 +150,8 @@
             <h3>Preise:</h3>
             <ul>
                 <li>1g <span>10 €</span></li>
-                <li>5g <span>45 €</span></li>
-                <li>10g <span>85 €</span></li>
+                <li>5g <span>50 €</span></li>
+                <li>12g <span>100 €</span></li>
             </ul>
         </section>
     </main>
